@@ -3,7 +3,7 @@
 	if(isset($_POST['username'],$_POST['password'])){
 		$uname = $_POST['username'];
 		$pwd = $_POST['password'];
-		if($uname == 'thara' && $pwd == 'thara'){
+		if($uname == 'admin' && $pwd == 'admin'){
 			echo 'You have Successfully Logged in';			
 		}
 		else{
