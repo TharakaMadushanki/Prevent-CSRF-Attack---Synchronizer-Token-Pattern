@@ -8,8 +8,7 @@
 	</head>
 	<body>
 		<form name="results">
-			<div class="results">
-				<h3>Updated Successfully</h3>			
+			<div class="results">							
 				<?php
 
 					require_once 'token.php';
@@ -18,6 +17,7 @@
 
 					if(isset($_POST['updatepost'])){
 						if(token::checkToken($csrfTokenValue,$_COOKIE['sessionId'])){
+							echo "<div><h3>Updated Successfully</h3></div>";
 							echo "<div class='alert alert-secondary'>".$_POST['updatepost']."</div>";		
 						}	
 						else{
